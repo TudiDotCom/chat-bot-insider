@@ -1,11 +1,15 @@
+
+
+# MyChatBot
+
 ###
 I know there are bugs due to my ".includes()" functions when comparing the names of the strings. I left it like this to make testing easier.
 I should probably implement an algorithm to test "how much" the strings are alike, but I
 was past the 2 hours (maybe Levenshtein distance) and then send a message with a proposal("Did you want to say ...?") 
 
-# MyChatBot
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
+
 
 ## Development server
 
