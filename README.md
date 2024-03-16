@@ -1,3 +1,8 @@
+###
+I know there are bugs due to my ".includes()" functions when comparing the names of the strings. I left it like this to make testing easier.
+I should probably implement an algorithm to test "how much" the strings are alike, but I
+was past the 2 hours (maybe Levenshtein distance) and then send a message with a proposal("Did you want to say ...?") 
+
 # MyChatBot
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
@@ -25,3 +30,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
