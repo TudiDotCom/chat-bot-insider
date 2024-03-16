@@ -20,8 +20,6 @@ export class AppComponent implements OnInit {
   botScreen = 1; // chat stage
   showChat = false;
 
-  buttonText: string = "Test";
-
   constructor(private http: HttpClient) {
 
     this.http.get('assets/data/data.json').subscribe({
@@ -38,7 +36,6 @@ export class AppComponent implements OnInit {
         alert(err.status + " " + err.statusText)
       },
       complete: () => console.log('Observable emitted the complete notification')
-      // err => { console.log("ERRORce faci!" + err); }
     })
   }
 
@@ -52,7 +49,6 @@ export class AppComponent implements OnInit {
 
   private setMessageForRequestedStockMarket(requestedStockMarket: any): void {
     let botReply = this.buildMessageWithStocks(requestedStockMarket.topStocks);
-    console.log(botReply);
     this.sendMessageFromBot(botReply);
   }
 
@@ -75,9 +71,6 @@ export class AppComponent implements OnInit {
       }
     })
 
-    console.log("Piata: ");
-    console.log(stockMarketResponse);
-
     if (stockMarketResponse && Object.keys(stockMarketResponse).length > 0) {
       this.setMessageForRequestedStockMarket(stockMarketResponse);
     } else {
@@ -91,7 +84,6 @@ export class AppComponent implements OnInit {
   }
 
   sendMessage(event: any): void {
-    console.log("Bot SCREEN: " + this.botScreen);
     this.sendReplyMsg(event.message);
 
     switch (this.botScreen) { //user choose stock market
@@ -114,11 +106,11 @@ export class AppComponent implements OnInit {
           || event.message.toLowerCase().trim().includes("menu")
           || event.message.toLowerCase().trim().includes("main")) {
           this.goToMenu();
-
+            // to do
         } else if (event.message.toLowerCase().trim() === "go back"
           || event.message.toLowerCase().trim() === "back"
-          || event.message.toLowerCase().trim().includes("go")) {
-          this.goBack();
+          || event.message.toLowerCase().trim().includes("back")) {
+          this.goBack(); // to do
         }
         break;
       }
@@ -162,9 +154,6 @@ export class AppComponent implements OnInit {
       stock.stockName.toLowerCase() === stockName ||
       stock.stockName.toLowerCase().includes(stockName)
     )
-
-    console.log("chosenStock: ")
-    console.log(myStock);
 
     if (myStock && Object.keys(myStock).length > 0) {
       this.buildMessageWithStockDetails(myStock);
@@ -240,7 +229,6 @@ export class AppComponent implements OnInit {
       this.stockMarkets.push(x.stockExchange); // TO DO
     })
 
-    console.log("Main stocks: " + this.stockMarkets);
   }
 
   private sendReplyMsg(msgText: string): void {

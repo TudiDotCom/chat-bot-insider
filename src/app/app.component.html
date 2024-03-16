@@ -8,7 +8,7 @@
         #chatComponent
         title="Your Market Insider"
       >
-        <div *nbCustomMessage="'button'">
+        <!-- <div *nbCustomMessage="'button'">
           <p class="text-control button-custom-message-text">
             Wow! Button in a message!
           </p>
@@ -17,9 +17,9 @@
             status="control"
             (click)="chatComponent.scrollListBottom()"
           >
-            {{ buttonText }}
+            Press
           </button>
-        </div>
+        </div> -->
 
         <nb-chat-message
           *ngFor="let msg of messages"
