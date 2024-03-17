@@ -1,6 +1,40 @@
+
+
 # MyChatBot
 
+## How to install an Angular 17.3 application 
+First make sure you have installed nodejs and npm. A minimum version is needed. For Angular 17.3 you need at least nodejs 18.13.0 or a newer version;
+Here is my stack: https://github.com/TudiDotCom/chat-bot-insider/blob/main/my_angular_version.png
+
+1. Install nodejs and npm; https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+
+Check version:
+- To check nodejs version: node --version
+- To check npm: npm --version 
+
+2. Install Angular CLI:
+- npm install -g @angular/cli
+- check version: ng version
+
+3. Clone the project: git clone https://github.com/TudiDotCom/chat-bot-insider.git
+
+4. Open the folder with the project and run "npm install" - to install the dependencies
+
+5. Run the project in the browser: "ng serve"
+Then open http://localhost:4200/ in a browser to view the project.
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
+The project was build using Angular UI KIT Nebular: https://akveo.github.io/nebular/
+
+
+
+###
+I know there are bugs due to my ".includes()" functions when comparing the names of the strings. I left it like this to make testing easier.
+I should probably implement an algorithm to test "how much" the strings are alike, but I
+was past the 2 hours (maybe Levenshtein distance) and then send a message with a proposal("Did you want to say ...?") 
+
+
 
 ## Development server
 
@@ -25,3 +59,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
