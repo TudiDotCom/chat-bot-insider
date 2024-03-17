@@ -23,13 +23,17 @@ Check version:
 5. Run the project in the browser: "ng serve"
 Then open http://localhost:4200/ in a browser to view the project.
 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
 The project was build using Angular UI KIT Nebular: https://akveo.github.io/nebular/
+
+
 
 ###
 I know there are bugs due to my ".includes()" functions when comparing the names of the strings. I left it like this to make testing easier.
 I should probably implement an algorithm to test "how much" the strings are alike, but I
 was past the 2 hours (maybe Levenshtein distance) and then send a message with a proposal("Did you want to say ...?") 
+
 
 
 ## Development server
