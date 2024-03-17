@@ -23,6 +23,7 @@ Check version:
 5. Run the project in the browser: "ng serve"
 Then open http://localhost:4200/ in a browser to view the project.
 
+The project was build using Angular UI KIT Nebular: https://akveo.github.io/nebular/
 
 ###
 I know there are bugs due to my ".includes()" functions when comparing the names of the strings. I left it like this to make testing easier.
