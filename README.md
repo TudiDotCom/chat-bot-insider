@@ -25,6 +25,7 @@ Then open http://localhost:4200/ in a browser to view the project.
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
+
 The project was build using Angular UI KIT Nebular: https://akveo.github.io/nebular/
 
 
