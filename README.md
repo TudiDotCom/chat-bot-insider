@@ -2,6 +2,12 @@
 
 # MyChatBot
 
+## How to install an Angular 17.3 application 
+First make sure you have installed nodejs and npm. A minimum version is needed. For Angular 17.3 you need at least nodejs 18.13.0 or a newer one;
+Here is my stack: https://github.com/TudiDotCom/chat-bot-insider/blob/main/my_angular_version.png
+
+
+
 ###
 I know there are bugs due to my ".includes()" functions when comparing the names of the strings. I left it like this to make testing easier.
 I should probably implement an algorithm to test "how much" the strings are alike, but I
