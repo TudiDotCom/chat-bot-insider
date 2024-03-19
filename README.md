@@ -1,6 +1,7 @@
 
 
 # MyChatBot
+![alt text](https://github.com/TudiDotCom/chat-bot-insider/blob/main/sample.png)
 
 ### How to install an Angular 17.3 application 
 First make sure you have installed nodejs and npm. A minimum version is needed. For Angular 17.3 you need at least nodejs 18.13.0 or a newer version;
