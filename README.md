@@ -6,7 +6,7 @@
 <hr>
 
 ### How to install an Angular 17.3 application 
-First make sure you have installed nodejs and npm. A minimum version is needed. For Angular 17.3 you need at least nodejs 18.13.0 or a newer version;\n
+First make sure you have installed nodejs and npm. A minimum version is needed. For Angular 17.3 you need at least nodejs 18.13.0 or a newer version;<br>
 Here is my stack: https://github.com/TudiDotCom/chat-bot-insider/blob/main/my_angular_version.png
 
 1. Install nodejs and npm; https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
